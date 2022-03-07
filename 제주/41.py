@@ -9,5 +9,7 @@ for i in range(1, input_data + 1):
             print('NO')
             break
 
-if i == input_data and count == 2:
+if input_data == 1:
+    print('NO')
+elif i == input_data and count == 2:
     print('YES')
