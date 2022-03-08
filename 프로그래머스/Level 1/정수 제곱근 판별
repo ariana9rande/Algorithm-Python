@@ -1,0 +1,11 @@
+import math
+
+def solution(n):
+    answer = 0
+    for i in range(int(math.sqrt(n)) + 1):
+        if i ** 2 == n:
+            answer = (i + 1) ** 2
+            break
+        if i == int(math.sqrt(n)):
+            answer = -1
+    return answer
