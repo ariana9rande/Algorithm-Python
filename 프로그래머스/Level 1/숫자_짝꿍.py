@@ -11,8 +11,7 @@ def solution(X, Y):
 
     for i in range(len(cnt)):
         if cnt[i] != 0:
-            for _ in range(cnt[i]):
-                answer.append(str(i))
+            answer.append(str(i) * cnt[i])
 
     if not answer:
         return "-1"
